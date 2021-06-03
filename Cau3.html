@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function demSoNguyenAm(arr) {
+        var count = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] == 'a' || arr[i] == 'o' || arr[i] == 'e' || arr[i] == 'u' || arr[i] == 'i')
+                count++;
+        }
+        if (count <= 0) return false;
+        else return count;
+    }
+
+    var arr1 = [1, 2, 3, 4, 5, 'a', 'o', 'e'];
+    console.log(demSoNguyenAm(arr1));
+</script>
+</body>
+</html>
