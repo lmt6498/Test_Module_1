@@ -1,6 +1,10 @@
 function phuongTrinhBacNhat(a, b) {
     if (a != 0) {
+        if (b != 0){
         return -b / a;
+            } else if (b == 0){
+        return  "Phương trình có vô số nghiệm";
+        }
     } else if (a == 0) {
         if (b != 0) {
             return "Phương trình vô nghiệm";
